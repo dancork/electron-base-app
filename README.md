@@ -9,6 +9,10 @@ Compile and launch the application
 npm run start
 ```
 
+## Development
+
+The front-end JavaScript files are stored in `src` and compiled in to `app`
+
 Compile the assets
 ```
 npm run build
