@@ -1,10 +1,9 @@
 {
-  "name": "application-base",
+  "name": "electron-base-app",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base public/",
     "build": "webpack",
     "launch": "electron main.js",
     "start": "npm run build && npm run launch"
@@ -15,6 +14,7 @@
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
+    "electron-packager": "^5.1.1",
     "electron-prebuilt": "^0.36.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"

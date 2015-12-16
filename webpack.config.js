@@ -1,9 +1,11 @@
+'use strict'
+
 var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
   entry: {
-    main: './src/index'
+    main: './src/entry'
   },
   output: {
     path: path.join( __dirname , 'app' ),
