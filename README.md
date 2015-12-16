@@ -8,6 +8,11 @@ Compile and launch the application
 ```
 npm run start
 ```
+## Package (TODO)
+Using [electron-packager](https://github.com/maxogden/electron-packager) to build Windows, Linux and Mac executables.
+```
+npm run package
+```
 
 ## Development
 
@@ -22,5 +27,3 @@ Launch the electron app
 ```
 npm run launch
 ```
-
-
