@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js --progress --profile --colors",
     "dev-server": "webpack-dev-server --config webpack.config.js --progress --colors --port 2992 --inline",
-    "launch": "electron main.js",
+    "launch": "electron .",
     "start": "npm run build && npm run launch"
   },
   "author": "Dan Cork",
