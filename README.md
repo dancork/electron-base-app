@@ -2,6 +2,15 @@
 
 A framework for creating desktop applications using [electron](https://github.com/atom/electron), [webpack](https://github.com/webpack/webpack) and [react](https://github.com/facebook/react)
 
+## Installation
+
+``
+git clone https://github.com/dancork/electron-base-app.git
+cd electron-base-app
+npm install
+```
+
+
 ## Usage
 
 Compile and launch the application
