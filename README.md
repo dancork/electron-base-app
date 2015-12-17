@@ -4,7 +4,7 @@ A framework for creating desktop applications using [electron](https://github.co
 
 ## Installation
 
-``
+```
 git clone https://github.com/dancork/electron-base-app.git
 cd electron-base-app
 npm install
