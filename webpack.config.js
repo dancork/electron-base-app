@@ -9,7 +9,8 @@ module.exports = {
   },
   output: {
     path: path.join( __dirname , 'app' ),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    libraryTarget: 'commonjs2'
   },
   module: {
     loaders: [
@@ -20,19 +21,16 @@ module.exports = {
         query: {
           presets: ['react', 'es2015']
         }
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
       }
     ]
   },
   resolve: {
-    root: path.join(__dirname, 'app'),
+    // root: path.join(__dirname, 'app'),
     extensions: ['', '.js', '.jsx'],
-    modulesDirectories: ['node_modules']
-  },
-  resolveLoader: {
-		root: path.join(__dirname, 'node_modules'),
-  },
-  plugins: [
-		new webpack.PrefetchPlugin('react'),
-		new webpack.PrefetchPlugin('react/lib/ReactComponentBrowserEnvironment')
-	]
+    // modulesDirectories: ['node_modules']
+  }
 }

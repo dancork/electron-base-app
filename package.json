@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config webpack.config.js --progress --profile --colors",
+    "dev-server": "webpack-dev-server --config webpack.config.js --progress --colors --port 2992 --inline",
     "launch": "electron main.js",
     "start": "npm run build && npm run launch"
   },
@@ -16,6 +17,7 @@
     "babel-preset-react": "^6.3.13",
     "electron-packager": "^5.1.1",
     "electron-prebuilt": "^0.36.0",
+    "html-loader": "^0.4.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },

@@ -1,12 +1,12 @@
 'use strict'
 
 import React from 'react'
+import Toolbar from './components/toolbar'
 
 export default class App extends React.Component {
   render() {
     return (
       <div className="component-app">
-        <div className="component-toolbar"></div>
         <div className="component-workspace">
           <div className="component-sidebar">
             <div className="component-file-list"></div>
