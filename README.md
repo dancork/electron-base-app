@@ -1,6 +1,6 @@
 # Electron Base Application
 
-A framework for creating desktop applications using [electron](https://github.com/atom/electron), [webpack](https://github.com/webpack/webpack) and [react](https://github.com/facebook/react)
+A framework for creating desktop applications using [Electron](https://github.com/atom/electron) and [React](https://github.com/facebook/react)
 
 ## Usage
 
@@ -16,14 +16,21 @@ npm run package
 
 ## Development
 
-The front-end JavaScript files are stored in `src` and compiled in to `app`
+The client-side JavaScript files are stored in `src` and compiled in to `app/bundle.js`
 
 Compile the assets
 ```
 npm run build
 ```
 
-Launch the electron app
+Launch the app using electron
 ```
 npm run launch
 ```
+
+### Dev Server - with hot load
+To start Webpack's development server run:
+```
+npm run dev-server
+```
+Then in a browser navigate to `http://localhost:8080/`
