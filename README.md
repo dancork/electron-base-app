@@ -42,4 +42,4 @@ To start Webpack's development server run:
 ```
 npm run dev-server
 ```
-Then in a browser navigate to `http://localhost:8080/`
+Then in a browser navigate to [http://localhost:8080/](http://localhost:8080/)
