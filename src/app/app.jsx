@@ -1,7 +1,7 @@
 'use strict'
 
-import React from 'react'
-import Toolbar from './components/toolbar'
+import React, { Component } from 'react'
+import { FileList, Toolbar } from './components/components'
 
 export default class App extends React.Component {
   render() {
@@ -10,7 +10,7 @@ export default class App extends React.Component {
         <Toolbar />
         <div className="component-workspace">
           <div className="component-sidebar">
-            <div className="component-file-list"></div>
+            <FileList />
             <div className="component-resizer"></div>
           </div>
           <div className="component-editor"></div>

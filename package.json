@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js --progress --profile --colors",
-    "dev-server": "webpack-dev-server --config webpack.config.js --progress --colors --port 2992 --inline",
+    "build": "webpack --progress --colors",
+    "dev-server": "webpack-dev-server --progress --colors --inline --hot --content-base app/",
     "launch": "electron .",
     "start": "npm run build && npm run launch"
   },
@@ -22,7 +22,9 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "classnames": "^2.2.1",
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "react-prop-types": "^0.3.0"
   }
 }

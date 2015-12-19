@@ -9,8 +9,7 @@ module.exports = {
   },
   output: {
     path: path.join( __dirname , 'app' ),
-    filename: 'bundle.js',
-    libraryTarget: 'commonjs2'
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
@@ -19,18 +18,12 @@ module.exports = {
         exclude: /(node_modules)/,
         loader: 'babel-loader',
         query: {
-          presets: ['react', 'es2015']
+          presets: ['react', 'es2015', 'stage-0']
         }
-      },
-      {
-        test: /\.html$/,
-        loader: 'html-loader'
       }
     ]
   },
   resolve: {
-    // root: path.join(__dirname, 'app'),
     extensions: ['', '.js', '.jsx'],
-    // modulesDirectories: ['node_modules']
   }
 }
