@@ -1,14 +1,11 @@
-'use strict'
-
 var path = require('path')
-var webpack = require('webpack')
 
 module.exports = {
   entry: {
     main: './src/entry'
   },
   output: {
-    path: path.join( __dirname , 'app' ),
+    path: path.join( __dirname, 'app' ),
     filename: 'bundle.js'
   },
   module: {
@@ -21,9 +18,16 @@ module.exports = {
           presets: ['react', 'es2015', 'stage-0']
         }
       }
+    ],
+    preLoaders: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader'
+      }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['', '.js', '.jsx']
   }
 }

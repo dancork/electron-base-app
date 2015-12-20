@@ -9,7 +9,7 @@ A framework for creating desktop applications using [Electron](https://github.co
 ```
 git clone https://github.com/dancork/electron-base-app.git
 cd electron-base-app
-npm install
+npm i
 ```
 
 

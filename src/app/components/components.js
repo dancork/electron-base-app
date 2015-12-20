@@ -1,9 +1,11 @@
 /* Atoms */
-export { AbstractButton } from './atoms/buttons/abstractButton'
-export { ToolbarButton } from './atoms/buttons/toolbarButton'
+import AbstractButton from './atoms/buttons/abstractButton'
+import ToolbarButton from './atoms/buttons/toolbarButton'
+export { AbstractButton, ToolbarButton }
 
 /* Molecules */
 
 /* Organisms */
-export { FileList } from './organisms/fileList'
-export { Toolbar } from './organisms/toolbar'
+import FileList from './organisms/fileList'
+import Toolbar from './organisms/toolbar'
+export { FileList, Toolbar }

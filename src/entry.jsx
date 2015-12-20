@@ -1,7 +1,5 @@
-'use strict'
-
-import React from 'react'
+// import React from 'react'
 import { render } from 'react-dom'
-import App from './app/app'
+import Routes from './app/routes'
 
-render(<App />, document.getElementById('app'))
+render(Routes, document.getElementById('app'))

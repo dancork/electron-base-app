@@ -1,9 +1,7 @@
-'use strict'
-
 import React, { Component } from 'react'
 import { FileList, Toolbar } from './components/components'
 
-export default class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div className="component-app">
@@ -19,3 +17,5 @@ export default class App extends React.Component {
     )
   }
 }
+
+export default App

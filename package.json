@@ -5,10 +5,9 @@
   "main": "main.js",
   "scripts": {
     "build": "webpack --progress --colors",
-    "ci": "npm run lint",
+    "ci": "npm run build",
     "dev-server": "webpack-dev-server --progress --colors --inline --hot --content-base app/",
     "launch": "electron .",
-    "lint": "eslint src/ && echo '✔ All Good'",
     "start": "npm run build && npm run launch"
   },
   "author": "Dan Cork",
@@ -20,8 +19,11 @@
     "electron-packager": "^5.1.1",
     "electron-prebuilt": "^0.36.0",
     "eslint": "^1.10.3",
+    "eslint-loader": "^1.1.1",
     "eslint-plugin-react": "^3.11.3",
+    "history": "^1.13.1",
     "html-loader": "^0.4.0",
+    "react-router": "^1.0.2",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },

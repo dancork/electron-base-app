@@ -1,7 +1,6 @@
-'use strict'
+// import React from 'react'
+import AbstractButton from './abstractButton'
 
-import React from 'react'
-import { AbstractButton } from './abstractButton'
+class ToolbarButton extends AbstractButton {}
 
-export class ToolbarButton extends AbstractButton {
-}
+export default ToolbarButton

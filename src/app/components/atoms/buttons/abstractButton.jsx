@@ -1,22 +1,8 @@
-'use strict'
-
 import React, { Component, PropTypes } from 'react'
 
 const types = ['button', 'reset', 'submit']
 
-export class AbstractButton extends Component {
-
-  static propTypes = {
-    disabled: PropTypes.bool,
-    href: PropTypes.string,
-    target: PropTypes.string,
-    type: PropTypes.oneOf(types)
-  }
-
-  static defaultProps = {
-    disabled: false,
-    type: 'button'
-  }
+class AbstractButton extends Component {
 
   render() {
     if (this.props.href || this.props.target) {
@@ -51,3 +37,18 @@ export class AbstractButton extends Component {
   }
 
 }
+
+AbstractButton.propTypes = {
+  children: PropTypes.any,
+  disabled: PropTypes.bool,
+  href: PropTypes.string,
+  target: PropTypes.string,
+  type: PropTypes.oneOf(types)
+}
+
+AbstractButton.defaultProps = {
+  disabled: false,
+  type: 'button'
+}
+
+export default AbstractButton

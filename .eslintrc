@@ -15,7 +15,7 @@
     "arrowFunctions": true,
     "binaryLiterals": false,
     "blockBindings": true,
-    "classes": false,
+    "classes": true,
     "defaultParams": false,
     "destructuring": true,
     "forOf": false,
