@@ -1,17 +1,16 @@
 'use strict'
 
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 
-const { bool, string, oneOf } = React.PropTypes
 const types = ['button', 'reset', 'submit']
 
 export class AbstractButton extends Component {
 
   static propTypes = {
-    disabled: bool,
-    href: string,
-    target: string,
-    type: oneOf(types)
+    disabled: PropTypes.bool,
+    href: PropTypes.string,
+    target: PropTypes.string,
+    type: PropTypes.oneOf(types)
   }
 
   static defaultProps = {
