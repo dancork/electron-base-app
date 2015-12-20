@@ -1,5 +1,7 @@
 # Electron Base Application
 
+[![Build Status](https://travis-ci.org/dancork/electron-base-app.svg)](https://travis-ci.org/dancork/electron-base-app)
+
 A framework for creating desktop applications using [Electron](https://github.com/atom/electron) and [React](https://github.com/facebook/react)
 
 ## Installation
