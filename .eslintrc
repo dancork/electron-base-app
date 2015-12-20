@@ -5,10 +5,7 @@
   "env": {
     "node": true,
     "mocha": true,
-    "amd": true,
-    "browser": true,
-    "jasmine": true,
-    "jquery": true
+    "browser": true
   },
   "plugins": [
     "react"
