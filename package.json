@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.1",
-    "history": "^1.13.1",
+    "history": "1.13.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-prop-types": "^0.3.0",
