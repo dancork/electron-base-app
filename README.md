@@ -17,7 +17,7 @@ npm i
 
 Compile and launch the application
 ```
-npm run start
+npm start
 ```
 ## Package (TODO)
 Using [electron-packager](https://github.com/maxogden/electron-packager) to build Windows, Linux and Mac executables.
